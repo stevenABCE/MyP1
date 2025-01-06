@@ -1,0 +1,121 @@
+# -------------------------------
+# Unreal Engine 忽略规则
+# -------------------------------
+
+# Unreal Engine 临时文件夹
+Saved/
+Intermediate/
+DerivedDataCache/
+Debug/
+Build/
+
+# 编译生成的二进制文件
+Binaries/
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
+*.log
+*.pak
+
+# 打包文件（移动端和其他平台）
+*.ipa
+*.apk
+*.unity3d
+*.app
+*.dSYM/
+*.zip
+
+# 启动器生成的临时文件
+LauncherChunkInstall/
+
+# Unreal Engine 配置文件
+*.ini
+Config/DefaultEditor.ini
+Config/DefaultEngine.ini
+Config/DefaultInput.ini
+Config/DefaultGame.ini
+Config/DefaultGameUserSettings.ini
+Config/DefaultEditorPerProjectUserSettings.ini
+
+# -------------------------------
+# IDE 和系统相关文件
+# -------------------------------
+
+# Visual Studio 配置文件
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.csproj
+*.xcodeproj
+*.db
+*.opendb
+*.tlog
+*.idb
+*.ipch
+*.lastbuildstate
+
+# JetBrains Rider 和其他 IDE
+.idea/
+*.iml
+
+# MacOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Windows 系统文件
+desktop.ini
+$RECYCLE.BIN/
+
+# -------------------------------
+# 临时文件和缓存
+# -------------------------------
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*.lock
+*.stackdump
+
+# 不需要的缓存文件
+*.cache
+*.log
+
+# -------------------------------
+# Unreal Engine 必要文件
+# -------------------------------
+
+# 保留运行项目所需的文件
+!Source/
+!Source/**/*.cpp
+!Source/**/*.h
+!Source/**/*.c
+!Source/**/*.hpp
+
+!Content/
+!Content/**/*.uasset
+!Content/**/*.umap
+!Content/**/*.txt
+
+# 保留 .uproject 文件
+!*.uproject
+
+# 保留插件相关文件
+!Plugins/
+!Plugins/**/*.uplugin
+!Plugins/**/*.dll
+
+# 保留必要的配置文件
+!Config/
+!Config/DefaultGame.ini
+!Config/DefaultEngine.ini
